@@ -1,0 +1,12 @@
+Userame     Bill Type     Amount
+
+ruvini     Electricity      Rs: 13067     PayPal
+kalpa     Electricity      Rs: 18067     PayPal
+sara     Mobile     Rs: 10345     Cash Delivery
+wewe     Mobile     Rs: 5666     Credit Card   
+wewe     Electricity     Rs:5666     Credit Card 
+wewe     Mobile     Rs:5666     Credit Card     
+rtete     Water     Rs:45888     Cash Delivery     
+ghjghjhgj     Electricity     Rs:54646646     Credit Card         
+Lahiru     Electricity     Rs:25000     Credit Card     
+Kamal     Mobile     Rs:3000     PayPal     

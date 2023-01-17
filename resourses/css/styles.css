@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  color: #555555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mainHeader.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+/*----NAVIGATION-----*/
+.main-nav{
+  list-style: none;
+  margin-top: 50px;
+  z-index: 0;
+  position: fixed;
+  padding-left: 40%; 
+}
+
+.logo{
+  height: 80px;
+  width: auto;
+  margin-top: 3%;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;    
+}
+
+.main-nav  a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px 0;
+  transition: border-bottom 0.1s;
+}
+
+.main-nav li img{    
+  width: 30px;
+  height: auto;
+  filter: invert(100%);  
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #4dff4d;   
+}
+
+
+/*--------CATALOG------*/
+.services-cat{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.services-cat li{
+  display: inline-block;
+}
+
+.services-cat a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.services-cat img{    
+  width: auto;
+  height: 120px;
+  padding: 8px;
+  margin: 2px;
+}
+
+.services-cat img:hover{    
+  transform: scale(1.05);
+  transition: 0.4s;   
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 50%;
+}
+
+.label {
+  text-align: center;  
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px; 
+  color: #ffffff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color:#D3D3D3;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #D3D3D3;
+  font-size: 120%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+} 
+
+span{
+  color: #FFD700;
+}
+
+.text-cover{
+  position: absolute;
+  top: 30%; 
+}
+
+.call-centre{
+  font-size: 120%;
+  word-spacing: 4px;
+  text-align: right;
+  margin-right: 3%
+}
+
+/*---------SECTION----------*/
+.box {
+  padding: 1%;
+}
+
+section {
+  padding-left: 50px 0;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.galary{
+  width: 82%;
+  height: 80%;
+  margin: auto;
+  padding: 5px;
+  background: #77bbff;
+  box-shadow: 1px 2px rgba(0,0,0,0.8);
+}
+
+.galary img:hover{    
+  transform: scale(2.0);
+  transition: 0.4s;
+}
+
+/*------FOOTER-------*/
+footer {
+  padding: 20px;
+  background-color: #4C4A48;
+  color: #e6e6e6;
+  font-size: 80%;
+}
+
+footer p {
+  margin-top: 0px;
+  color: #888888;
+  text-align: center;
+}
+
+.footer-nav{
+  text-decoration: none;
+  list-style: none;
+  float: left;
+  color: aliceblue;
+}
+
+.social-icons {
+  list-style: none;
+  float: right;
+  filter: invert(70%); 
+}
+
+.footer-nav li, .social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+  height: 2%;
+}
+
+.footer-nav li a, .social-icons li a{
+  text-decoration: none;
+  border-bottom: 0;
+  color: #888888;
+}
+
+.social-icons li img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;  
+}
+
+.social-icons li img:hover{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  transform: scale(1.05);
+  transition: 0.1s;
+  filter: invert(80%);
+}
+
+/*----LOAN COVER IMAGE-----*/
+.A{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mLoan.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+
+/*----SAVINGS COVER IMAGE-----*/
+.B{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mSav.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+/*----FD COVER IMAGE-----*/
+.C{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mFD.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+/*----BILLS PAYMENTS COVER IMAGE-----*/
+.D{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mBPay.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+.E{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/mLog.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+/*-------PAYCENTER-------*/
+.paycenter{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/pay.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.paycenter-text{
+  margin-top: 3%;
+  max-width: 1140px;
+  left: 16%;
+  transform: translate(-50%,-50%); 
+}
+
+/*--------LOGIN-----*/
+input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.submitbtn {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #55cc55;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #f44335;
+}
+
+.linkbtn {
+  width: 500px;
+  height: auto;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  background-color: #00ff33;
+  border-radius: 12px;
+  margin-left: 700px;
+  margin-right: auto;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+.login{ 
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/*------ERROR------*/
+.error{
+  color: red;
+}

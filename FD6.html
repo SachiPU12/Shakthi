@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>6 months FD</title>
+          
+    <link rel="stylesheet" type="text/css" href="resourses/css/styles.css">
+  </head>
+    
+  <body>
+    <header class="C">
+      <nav class="fd">
+        <div class="row">
+          <ul class="main-nav">
+            <li>
+              <a href="index.html"><img src="icons/home.png" class="nav_home"alt="home">
+            </li>  
+            <li><a href="loan.html" target="_blank">Loans</a></li>  
+            <li><a href="savings.html" target="_blank">Savings</a></li>  
+            <li><a href="fd.html" target="_blank">FD</a></li>  
+            <li><a href="billPay.html" target="_blank">Bill Payments</a></li>  
+            <li><a href="Login.php"target="_blank">Login</a></li>
+          </ul>  
+        </div>
+      </nav>
+
+      <div class="row">
+        <img src="resourses/img/Shakthi.jpg" alt="logo" class="logo">
+      </div>
+      <div class="row">
+          <div class="text-cover">
+            <h1 style="color: black; border: groove;">6 months FD</h1>
+            <br><br><br>
+            <h3>Calculate Your 6 months FD</h3>
+          </div>
+        </div>
+    </header>
+        
+    <div class="row">
+      <form id="frm">
+        <div class="container center">
+          <label for="rate">
+            <h1 style="color: #668800"><b>Interest Rate is 8.5%</b></h1>
+          </label>
+
+          <br><br>
+          <label for="amount">Initial FD Amount :</label><br>
+          <input type="text" placeholder="Enter your FD amount" value="" id="amount" name="amount" required onchange="calFD()">
+
+          <br><br>
+          <label for="years">Duration (6 months) :</label><br>
+          <input type="text" id="year" name="psw" onchange="calFD()" value="6"readonly>
+        
+          <br><br>
+          <label>Interest for month is</label><b>
+          <div style="background-color: #66CC00; width:auto;height: 50px;">
+            <h3 style="color: #000000;padding: 5px;" id="monthlypay1"></h3>   
+          </div>    
+          <br><br>
+            
+          <label>Interest for after Duration is</label><b>
+          <div style="background-color: #66CC00; width:auto; height: 50px;">
+            <h3 style="color: #000000;padding: 5px;" id="monthlypay2"></h3>   
+          </div>    
+          <br>
+            
+          <button style="width: 100px" type="Calculate"onclick = "erc()" class="cancelbtn"><b>Clear</b></button>
+        </div>
+      </form> 
+    </div>
+
+    <script> 
+      function calFD(){
+        var amount = parseInt(document.getElementById("amount").value);
+        var rate = 8.5/100;
+        var interest = (amount * rate);
+        var calculate = (interest)/6;
+     
+        document.getElementById("monthlypay1").innerHTML = "Rs: "+ calculate;
+        document.getElementById("monthlypay2").innerHTML = "Rs: "+ interest;
+      }
+
+      function erc(){
+        document.getElementById("frm").reset();
+        document.getElementById("monthlypay1").innerHTML="";
+        document.getElementById("monthlypay2").innerHTML=""
+      }
+    </script>
+
+    <footer>
+      <div class="col span-1-of-1">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="icons/facebook.jpg" class="facebook" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="icons/twitter.png" class="twitter" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com" target="_blank">
+              <img src="icons/google.png" class="google" alt="google">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="icons/linkedin.png" class="linkedin" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+
+        <div class="row">
+          <ul class="footer-nav">
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="application.html">Downloads</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Customer Feedback</a></li>
+          </ul>
+        </div>
+
+        <br><br><br><br><br><br><br><br><hr>
+
+        <div class="copyright">
+          <p>
+            Copyright &copy; 2019 by Prabhani Programming. All rights reserved.<br>Solution By: Sachi Udawaththa
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>     
+</html>
+  
